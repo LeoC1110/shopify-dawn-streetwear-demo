@@ -4,6 +4,32 @@ A Shopify Dawn theme customization demo for a fictional streetwear brand: **Urba
 
 This project shows how I customized a Shopify Dawn storefront for a clothing/e-commerce brand, including homepage layout, product collections, product pages, size options, cart flow, discount setup, and a custom Liquid discount banner.
 
+## Screenshots
+
+### Homepage Hero Section
+
+![Homepage Hero](./screenshots/homepage_1.png)
+
+### Homepage with Custom Discount Banner and Product Collection
+
+![Homepage Discount Banner](./screenshots/homepage_2.png)
+
+### Product Page with Size Variants and Add to Cart
+
+![Product Page](./screenshots/product_page_1.png)
+
+### Cart Flow
+
+![Shopping Cart](./screenshots/Shopping_Cart.png)
+
+### Shopify Theme Editor Custom Section Settings
+
+![Theme Editor Section](./screenshots/theme_editor_section.png)
+
+### Brand Story and Footer Area
+
+![Homepage Footer](./screenshots/homepage_3.png)
+
 ## What This Demo Shows
 
 This demo was built to practice the type of Shopify work often needed for a clothing brand or online store:
@@ -59,32 +85,6 @@ This was added to show basic Shopify Liquid section development, not just visual
 - Apparel storefront layout
 - Basic cart flow testing
 - Basic responsive storefront testing
-
-## Screenshots
-
-### Homepage Hero Section
-
-![Homepage Hero](./screenshots/homepage_1.png)
-
-### Homepage with Custom Discount Banner and Product Collection
-
-![Homepage Discount Banner](./screenshots/homepage_2.png)
-
-### Product Page with Size Variants and Add to Cart
-
-![Product Page](./screenshots/product_page_1.png)
-
-### Cart Flow
-
-![Shopping Cart](./screenshots/Shopping_Cart.png)
-
-### Shopify Theme Editor Custom Section Settings
-
-![Theme Editor Section](./screenshots/theme_editor_section.png)
-
-### Brand Story and Footer Area
-
-![Homepage Footer](./screenshots/homepage_3.png)
 
 ## Notes
 
