@@ -2,59 +2,63 @@
 
 A Shopify Dawn theme customization demo for a fictional streetwear brand: **Urban Thread Co.**
 
-This project was built to practice Shopify storefront setup, Dawn theme customization, Liquid section development, product collections, product variants, discounts, and cart flow.
+This project shows how I customized a Shopify Dawn storefront for a clothing/e-commerce brand, including homepage layout, product collections, product pages, size options, cart flow, discount setup, and a custom Liquid discount banner.
 
-## Project Overview
+## What This Demo Shows
 
-Urban Thread Co. is a fictional streetwear storefront built with Shopify Dawn. The demo includes a customized homepage, navigation menu, product collection, product detail pages, size variants, sale pricing, cart flow, footer links, newsletter section, and a custom Liquid discount banner for new customers.
+This demo was built to practice the type of Shopify work often needed for a clothing brand or online store:
 
-## Key Features
+- Customizing a Dawn theme storefront
+- Turning a basic theme into a branded shopping experience
+- Setting up products, collections, prices, sale badges, and size variants
+- Creating a homepage with hero banner, product section, brand story, newsletter, and footer
+- Testing the customer flow from product page to cart
+- Building a custom promotional banner with Liquid
 
-- Customized Shopify Dawn homepage layout
-- Created a fictional streetwear brand: Urban Thread Co.
-- Added hero banner, navigation menu, product collection, brand story, newsletter, and footer
-- Created a New Arrivals product collection
-- Added product cards with product images, sale badges, compare-at prices, and sale prices
-- Added product detail pages with size variants
-- Tested Add to Cart and cart flow
-- Created a custom Liquid section for a new customer 10% off discount banner
-- Added editable Shopify Theme Editor settings for the custom discount banner
-- Created a WELCOME10 discount code concept
-- Added footer links for About us, Contact, Shipping Policy, Returns, and Privacy Policy
+## Storefront Features
+
+- Fictional streetwear brand: **Urban Thread Co.**
+- Homepage hero banner with call-to-action
+- Navigation menu with Home, Shop, New Arrivals, About us, and Contact
+- New Arrivals product collection
+- Product cards with images, sale badges, compare-at prices, and sale prices
+- Product detail pages with size variants
+- Add to Cart and cart flow testing
+- Footer links for About us, Contact, Shipping Policy, Returns, and Privacy Policy
+- Newsletter signup section
+- New customer discount banner for code **WELCOME10**
+
+## Custom Liquid Work
+
+I created a custom Liquid section for the new customer discount banner:
+
+`sections/new-customer-discount-banner.liquid`
+
+The banner is editable inside the Shopify Theme Editor. The store owner can update:
+
+- Small text
+- Heading
+- Description
+- Discount code
+- Button label
+- Button link
+- Top and bottom spacing
+
+This was added to show basic Shopify Liquid section development, not just visual theme editing.
 
 ## Shopify Skills Demonstrated
 
 - Shopify Dawn theme customization
-- Shopify Theme Editor configuration
+- Shopify Theme Editor setup
 - Liquid section development
 - Shopify schema settings
 - Product collections
 - Product variants
-- Discount banner feature
+- Discount banner setup
 - Navigation and footer setup
-- Apparel e-commerce storefront flow
+- Apparel storefront layout
+- Basic cart flow testing
 - Basic responsive storefront testing
-
-## Custom Liquid Section
-
-Custom section file:
-
-`sections/new-customer-discount-banner.liquid`
-
-This section includes editable Shopify Theme Editor settings for:
-
-- Small text
-- Heading
-- Description text
-- Discount code
-- Button label
-- Button link
-- Top and bottom padding
-
-The custom section was used to create a new customer discount banner:
-
-**Get 10% off your first order**  
-Discount code: **WELCOME10**
 
 ## Screenshots
 
@@ -90,4 +94,4 @@ Checkout may be limited depending on Shopify trial and payment settings, but the
 
 ## Status
 
-Demo project for Shopify Dawn theme customization practice.
+Portfolio demo for Shopify Dawn theme customization practice.
