@@ -1,0 +1,180 @@
+<section class="new-customer-discount-{{ section.id }}">
+  <div class="new-customer-discount__inner page-width">
+    {% if section.settings.small_text != blank %}
+      <p class="new-customer-discount__small">
+        {{ section.settings.small_text | escape }}
+      </p>
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h2 class="new-customer-discount__heading">
+        {{ section.settings.heading | escape }}
+      </h2>
+    {% endif %}
+
+    {% if section.settings.text != blank %}
+      <p class="new-customer-discount__text">
+        {{ section.settings.text | escape }}
+      </p>
+    {% endif %}
+
+    {% if section.settings.discount_code != blank %}
+      <div class="new-customer-discount__code">
+        Code: <strong>{{ section.settings.discount_code | escape }}</strong>
+      </div>
+    {% endif %}
+
+    {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}" class="new-customer-discount__button">
+        {{ section.settings.button_label | escape }}
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .new-customer-discount-{{ section.id }} {
+    background: #111111;
+    padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;
+  }
+
+  .new-customer-discount-{{ section.id }} .new-customer-discount__inner {
+    border: 2px solid #e63946;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .new-customer-discount-{{ section.id }} .new-customer-discount__small {
+    margin: 0 0 12px;
+    color: #e63946;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .new-customer-discount-{{ section.id }} .new-customer-discount__heading {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(30px, 5vw, 52px);
+    line-height: 1.1;
+  }
+
+  .new-customer-discount-{{ section.id }} .new-customer-discount__text {
+    max-width: 680px;
+    margin: 18px auto 0;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .new-customer-discount-{{ section.id }} .new-customer-discount__code {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 10px 18px;
+    border: 1px solid #e63946;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+
+  .new-customer-discount-{{ section.id }} .new-customer-discount__button {
+    display: inline-block;
+    margin-top: 26px;
+    padding: 13px 28px;
+    background: #e63946;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid #e63946;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .new-customer-discount-{{ section.id }} .new-customer-discount__button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+  }
+
+  @media screen and (max-width: 749px) {
+    .new-customer-discount-{{ section.id }} .new-customer-discount__inner {
+      padding: 32px 18px;
+    }
+
+    .new-customer-discount-{{ section.id }} .new-customer-discount__text {
+      font-size: 15px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "New customer discount",
+  "tag": "section",
+  "class": "section new-customer-discount-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "small_text",
+      "label": "Small text",
+      "default": "New customer offer"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Get 10% off your first order"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Create an account and use the discount code at checkout. Built for first-time shoppers exploring Urban Thread Co."
+    },
+    {
+      "type": "text",
+      "id": "discount_code",
+      "label": "Discount code",
+      "default": "WELCOME10"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Create account"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 20,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 20,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    }
+  ],
+  "presets": [
+    {
+      "name": "New customer discount"
+    }
+  ]
+}
+{% endschema %}
